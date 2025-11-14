@@ -56,7 +56,6 @@
     /* text sections */
 
   .section__text-field {
-    inline-size: min-content(375px, 100%);
     inline-size: calc(100% - 20px);
     display: grid;
     gap: 10px;
@@ -101,11 +100,6 @@
   }
 
     /* footer */
-
-  .footer {
-    min-block-size: 100%;
-    min-inline-size: 100%;
-  }
   
   .footer-title {
     margin: 0;

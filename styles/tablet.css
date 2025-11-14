@@ -129,11 +129,6 @@
 	}
 
 	  /* footer */
-
-  .footer {
-    min-block-size: 100%;
-    min-inline-size: 100%;
-  }
   
   .footer-title {
     margin: 0;

@@ -8,7 +8,8 @@
   /* header */
 
 .header {
-  width: 100%;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .decorated-zone {
@@ -39,6 +40,10 @@
   border: none;
 }
 
+.section__header {
+  display: grid;
+}
+
 .title {
   font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
@@ -49,7 +54,6 @@
 }
 
 .title-text {
-  display: flex;
   font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
   font-display: swap;
@@ -71,15 +75,12 @@
 .decorative-element {
   border: var(--decorative-border);
   position: absolute;
-}
-
-.decorative-element {
   width: 25px;
   height: 25px;
 }
 
 .header .decorative-element:nth-child(1)::before {
-  content: 'rec';
+  content: 'REC';
   position: absolute;
   font-size: var(--text-font-size);
   font-family: 'IBM Plex mono';
@@ -172,6 +173,8 @@ article p {
   /* footer */
 
 .footer {
+  block-size: 100%;
+  inline-size: 100%;
   display: grid;
   position: relative;
 }
