@@ -1,5 +1,176 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  width: 100%;
+  background: var(--page-bg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+  /* header */
+
+.decorated-zone {
+  position: relative;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  font-size: var(--text-font-size);
+  line-height: 18px;
+  color: var(--title-name-color);
+  text-transform: lowercase;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: var(--button-border);
+}
+
+.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+  border: var(--button-border-hover);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus-visible {
+  text-decoration: underline 1px var(--buttons-color);
+  outline: none;
+  border: none;
+}
+
+.title {
+  font-family: 'IBM Plex mono';
+  font-weight: var(--text-font-weight-bold);
+  font-display: swap;
+  line-height: var(--title-line-height);
+  color: var(--Header-color);
+  text-shadow: 4px 4px var(--Header-shadow);
+}
+
+.title-text {
+  display: flex;
+  font-family: 'IBM Plex mono';
+  font-weight: var(--text-font-weight-bold);
+  font-display: swap;
+  line-height: var(--text-line-height);
+  text-wrap: wrap;
+}
+
+.title-decor {
+  background-color: var(--title-decor-bg-color);
+}
+
+.section__decorative-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.decorative-element {
+  border: var(--decorative-border);
+  position: absolute;
+}
+
+.decorative-element {
+  width: 25px;
+  height: 25px;
+}
+
+.header .decorative-element:nth-child(1)::before {
+  content: 'rec';
+  position: absolute;
+  font-size: var(--text-font-size);
+  font-family: 'IBM Plex mono';
+  font-weight: var(--text-font-weight-bold);
+  text-transform: uppercase;
+  line-height: 25px;
+  right: 35px;
+  color: var(--decorative-text-color);
+}
+
+.header .decorative-element:nth-child(1)::after {
+  content: '.';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50px;
+  color: transparent;
+  background-color: var(--decorative-bg-color);
+  box-shadow: 0 0 4px 2px var(--decorative-bg-color);
+  top: 10px;
+  right: 10px;
+}
+
+  /* sections */
+
+.section__title-name {
+  color: var(--title-name-color);
+}
+
+.section__text-title {
+  font-family: 'IBM Plex mono';
+  font-weight: var(--text-font-weight-bold);
+  line-height: var(--text-line-height);
+  text-wrap: wrap;
+  margin-block: 20px 10px;
+  color: var(--text-title-color);
+  background-color: var(--title-decor-bg-color);
+}
+
+.section__text-title:first-child {
+  margin-block: 0 10px;
+}
+
+article p {
+  line-height: var(--text-line-height);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+}
+
+.text-title-link:hover {
+  text-decoration: underline 2px var(--text-color);
+}
+
+.text-title-link:focus-visible {
+  outline: solid 1px var(--text-color);
+  text-decoration: none;
+}
+
+.section__text-title-list {
+  font-weight: var(--text-font-weight);
+}
+
+  /* gallary section  */
+
+.section__gallary {
+  font-family: 'IBM Plex mono';
+  font-weight: var(--text-font-weight-bold);
+  text-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__gallary-pictures {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.section__gallary-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+  /* footer */
+
+.footer {
+  display: grid;
+  position: relative;
+}
+
+.footer-title {
+  justify-self: center;
+  align-items: center;
+  text-align: center;
 }
