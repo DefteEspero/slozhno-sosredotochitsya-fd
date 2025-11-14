@@ -5,6 +5,8 @@
 :root {
 
   /* переменные основной темы */
+
+  /*
   --Header-color: #DB00FF;
   --Header-schadow: #FF0070;
   
@@ -19,7 +21,24 @@
   --title-bg-color: #FF0070;
   --title-name-color: var(--title-bg-color);
   --page-bg: url("../images/cover-image-dark.png"), #000028;
+*/
 
+  --Header-color: #DB00FF;
+  --Header-shadow: #FF0070;
+  
+  --button-border: solid 2px #FF0070;
+  --button-border-hover: solid 2px rgba(255, 0, 112, 0.4);
+  --buttons-color: #FF0070;
+  
+  --decorative-border: solid 1px #FF0070;
+  --decorative-text-color: #FF0070;
+  --decorative-bg-color: #FF0070;
+  
+  --title-decor-bg-color: #FF0070;
+  --text-color: #F1B2CE;
+  --title-name-color: #FF0070;
+  --text-title-color: #000028;
+  --page-bg: url("../images/cover-image-dark.png"), #000028;
 
   /* переменные для текста */
   --text-font-weight-bold: bold;

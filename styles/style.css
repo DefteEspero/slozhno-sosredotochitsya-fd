@@ -1,13 +1,15 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  width: 100%;
   background: var(--page-bg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;     
 }
 
   /* header */
+
+.header {
+  width: 100%;
+}
 
 .decorated-zone {
   position: relative;
@@ -53,6 +55,7 @@
   font-display: swap;
   line-height: var(--text-line-height);
   text-wrap: wrap;
+  color: var(--text-title-color);
 }
 
 .title-decor {
@@ -148,6 +151,10 @@ article p {
   text-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.section__title-gallary {
+  color: var(--text-title-color);
 }
 
 .section__gallary-pictures {
