@@ -1,7 +1,7 @@
 @media screen and (width < 768px) and (width >= 375px) { 
 
-    /* header, buttons */
-  
+  /* header, buttons */
+
   .header {
     margin-block-end: 40px;
   }
@@ -53,7 +53,7 @@
     border-top: transparent;
   }
 
-    /* text sections */
+  /* text sections */
 
   .section__text-field {
     inline-size: calc(100% - 20px);
@@ -79,28 +79,28 @@
   .section__text-title-list:first-child {
     margin-block-start: 20px;
   }
-    
-    /* picture sections */
 
-  .section__gallary {
+  /* picture sections */
+
+  .section__gallery {
     inline-size: calc(100% - 20px);
     margin-inline: 10px;
     margin-block-end: 40px;
     gap: var(--elements-gap);
   }
 
-  .section__title-gallary {
+  .section__title-gallery {
     margin-block-end: 20px;
   }
 
-  .section__gallary-pictures {
+  .section__gallery-pictures {
     gap: 10px;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
   }
 
-    /* footer */
-  
+  /* footer */
+
   .footer-title {
     margin: 0;
     padding-inline: 13px;

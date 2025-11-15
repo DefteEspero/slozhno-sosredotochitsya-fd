@@ -27,7 +27,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --Header-color: #FFC2E6;
-    --Header-schadow: #FF8DCB;
+    --Header-shadow: #FF8DCB;
   
     --button-border: solid 2px #353430;
     --button-border-hover: solid 2px rgba(53, 52, 48, 0.4);
