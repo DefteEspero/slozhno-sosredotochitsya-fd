@@ -6,11 +6,10 @@
 }
 
   /* header */
-
-.header {
-  inline-size: 100%;
-  block-size: 100%;
-}
+  .header {
+    block-size: 100%;
+    inline-size: 100%;
+  }
 
 .decorated-zone {
   position: relative;
@@ -47,7 +46,6 @@
 .title {
   font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
-  font-display: swap;
   line-height: var(--title-line-height);
   color: var(--Header-color);
   text-shadow: 4px 4px var(--Header-shadow);
@@ -56,7 +54,6 @@
 .title-text {
   font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
-  font-display: swap;
   line-height: var(--text-line-height);
   text-wrap: wrap;
   color: var(--text-title-color);
