@@ -171,8 +171,8 @@ article p {
 /* footer */
 
 .footer {
-  block-size: 100%;
-  inline-size: 100%;
+  min-block-size: 100%;
+  min-inline-size: 100%;
   display: grid;
   position: relative;
 }
