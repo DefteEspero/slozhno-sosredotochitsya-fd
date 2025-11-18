@@ -9,8 +9,8 @@
   --Header-color: #DB00FF;
   --Header-shadow: #FF0070;
   
-  --button-border: solid 2px #FF0070;
-  --button-border-hover: solid 2px rgba(255, 0, 112, 0.4);
+  --button-border: solid 1px #FF0070;
+  --button-border-hover: solid 1px rgba(255, 0, 112, 0.4);
   --buttons-color: #FF0070;
   
   --decorative-border: solid 1px #FF0070;
@@ -22,4 +22,5 @@
   --title-name-color: #FF0070;
   --text-title-color: #000028;
   --page-bg: url("../images/cover-image-dark.png"), #000028;
+  --background-color: #000028;
 }

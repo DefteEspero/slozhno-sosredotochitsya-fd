@@ -1,32 +1,42 @@
-
 .page {
+  font-family: var(--text-font-familly);
   background: var(--page-bg);
+  background-color: var(--background-color);
   background-repeat: no-repeat;
-  background-attachment: fixed;     
+  background-attachment: fixed;
 }
 
 /* header */
 
 .header {
-  min-block-size: 100%;
-  min-inline-size: 100%;
+  padding: 0;
+  margin: 0;
+  min-block-size: 100dvh;
 }
 
 .decorated-zone {
   position: relative;
+  overflow: clip;
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
   font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  background-color: transparent;
   line-height: 18px;
   color: var(--title-name-color);
   text-transform: lowercase;
   border: none;
 }
 
+.header__theme-menu-button {
+  align-items: center;
+  text-align: center;
+  border: solid 1px transparent;
+}
+
 .header__theme-menu-button_active {
-  border: var(--button-border);
+  outline: var(--button-border);
 }
 
 .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
@@ -34,10 +44,10 @@
   cursor: pointer;
 }
 
-.header__theme-menu-button:focus-visible {
-  text-decoration: underline 1px var(--buttons-color);
+ .header__theme-menu-button:focus-visible {
+  border-color: transparent;
   outline: none;
-  border: none;
+  border-bottom-color: var(--button-border);
 }
 
 .section__header {
@@ -45,92 +55,69 @@
 }
 
 .title {
-  font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
   line-height: var(--title-line-height);
   color: var(--Header-color);
   text-shadow: 4px 4px var(--Header-shadow);
 }
 
-.title-text {
-  font-family: 'IBM Plex mono';
-  font-weight: var(--text-font-weight-bold);
-  line-height: var(--text-line-height);
-  text-wrap: wrap;
-  color: var(--text-title-color);
-}
-
 .title-decor {
   background-color: var(--title-decor-bg-color);
-}
-
-.section__decorative-elements {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.decorative-element {
-  border: var(--decorative-border);
-  position: absolute;
-  width: 25px;
-  height: 25px;
-}
-
-.header .decorative-element:nth-child(1)::before {
-  content: 'REC';
-  position: absolute;
-  font-size: var(--text-font-size);
-  font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
-  text-transform: uppercase;
-  line-height: 25px;
-  right: 35px;
-  color: var(--decorative-text-color);
+  line-height: var(--text-line-height);
+  color: var(--text-title-color);
+  text-wrap: wrap;
 }
 
-.header .decorative-element:nth-child(1)::after {
-  content: '.';
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  border-radius: 50px;
-  color: transparent;
-  background-color: var(--decorative-bg-color);
-  box-shadow: 0 0 4px 2px var(--decorative-bg-color);
-  top: 10px;
-  right: 10px;
+.title-decor-weight {
+  font-weight: var(--text-font-weight);
 }
 
 /* sections */
 
 .section__title-name {
   color: var(--title-name-color);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+  font-weight: var(--text-font-weight-bold);
+}
+
+.section__text-list {
+  color: var(--text-title-color);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+  font-weight: var(--text-font-weight-bold);
+  margin-block-end: 20px;
 }
 
 .section__text-title {
-  font-family: 'IBM Plex mono';
-  font-weight: var(--text-font-weight-bold);
-  line-height: var(--text-line-height);
-  text-wrap: wrap;
   margin-block: 20px 10px;
-  color: var(--text-title-color);
-  background-color: var(--title-decor-bg-color);
 }
 
 .section__text-title:first-child {
   margin-block: 0 10px;
 }
 
-article p {
+.section__paragraph {
   line-height: var(--text-line-height);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
   color: var(--text-color);
+  margin-block-end: 20px;
+}
+
+.section__list-title {
+  margin-block-start: 10px;
+}
+
+.text-title-link {
+  text-decoration: transparent;
+  outline: transparent;
+  text-shadow: 2px 2px var(--Header-shadow);
 }
 
 .text-title-link:hover {
-  text-decoration: underline 2px var(--text-color);
+  border-bottom: solid 2px var(--buttons-color)
 }
 
 .text-title-link:focus-visible {
@@ -138,14 +125,9 @@ article p {
   text-decoration: none;
 }
 
-.section__text-title-list {
-  font-weight: var(--text-font-weight);
-}
-
 /* gallery section  */
 
 .section__gallery {
-  font-family: 'IBM Plex mono';
   font-weight: var(--text-font-weight-bold);
   text-wrap: wrap;
   align-items: center;
@@ -171,8 +153,7 @@ article p {
 /* footer */
 
 .footer {
-  min-block-size: 100%;
-  min-inline-size: 100%;
+  min-block-size: 100dvh;
   display: grid;
   position: relative;
 }
