@@ -59,11 +59,16 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: min-content;
 		gap: 10px;
-		padding-block: 192px 173px;
+		padding-block: 196px 178px;	
 		margin-inline-end: 20px;
 		align-items: center;
 		text-align: end;
 		justify-content: end;
+	}
+
+	.header__theme-menu-button {
+		padding-inline: 13px;
+		padding-block: 1.5px;
 	}
 
 	.section__header {
@@ -73,7 +78,9 @@
 	.title {
 		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 		margin-block: 0 162px;
+		margin-inline-start: 0;
 		align-items: center;
+		margin-inline: 0;
 	}
 
 	.title-text {
@@ -182,6 +189,6 @@
   .footer-title {
     margin: 0;
     padding-inline: 204px;
-    padding-block: 423px;
+    padding-block: 463px;
   }
 }

@@ -58,7 +58,7 @@
     display: grid;
     grid-template-columns: repeat(3, min-content);
     gap: 10px;
-    padding-block: 20px 0;
+    padding-block: 20px 273px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -71,7 +71,8 @@
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     align-items: center;
-    margin-block: 273px 114px;
+    margin-block: 0 114px;
+    margin-inline-start: 0;
   }
 
   .title-text {
@@ -79,6 +80,7 @@
     max-width: 491px;
     margin-inline: 0 20px;
     justify-self: end;
+    white-space: pre-line;
   }
 
   /* text sections */

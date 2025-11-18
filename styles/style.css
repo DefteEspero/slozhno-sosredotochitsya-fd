@@ -11,7 +11,7 @@
 .header {
   padding: 0;
   margin: 0;
-  min-block-size: 100dvh;
+  block-size: 100dvh;
 }
 
 .decorated-zone {
@@ -63,6 +63,7 @@
   line-height: var(--text-line-height);
   color: var(--text-title-color);
   text-wrap: wrap;
+  font-size: var(--text-font-size);
 }
 
 .title-decor-weight {
@@ -149,7 +150,7 @@
 /* footer */
 
 .footer {
-  min-block-size: 100dvh;
+  block-size: 100dvh;
   display: grid;
   position: relative;
 }

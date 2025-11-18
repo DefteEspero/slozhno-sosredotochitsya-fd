@@ -1,4 +1,4 @@
-@media (375px <= width < 768px) { 
+@media (375px <= width < 768px) {
 
   /* header, buttons */
 
@@ -33,7 +33,7 @@
     position: absolute;
     content: "rec";
     top: 10px;
-    right: 48px;
+    right: 38px;
     text-transform: uppercase;
     font-size: var(--text-font-size);
     line-height: 25px;
@@ -59,27 +59,33 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
     gap: 10px;
-    padding-block-start: 75px;
+    padding-block: 75px;
     margin-inline-end: 10px;
     align-items: center;
     text-align: end;
     justify-content: end;
   }
 
+  .header__theme-menu-button {
+    padding-inline: 13px;
+    padding-block: 1.5px;
+  }
+
   .section__header {
     padding-block-end: 66px;
   }
-  
+
   .title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-block: 65px 55px;
+    margin-block: 0 55px;
+    margin-inline-start: 9px;
     align-items: center;
   }
 
   .title-text {
     font-size: var(--text-font-size);
     max-width: 100%;
-    margin-inline:  10px;
+    margin-inline: 10px;
     justify-self: end;
     white-space: pre-line;
   }
@@ -121,7 +127,7 @@
   .section__text-field-block .section__article {
     gap: 0;
   }
- 
+
   .section__list-field-block {
     inline-size: calc(100% - 20px);
     display: grid;
@@ -153,7 +159,7 @@
   }
 
   .section__title-gallery {
-    margin-block-end: 20px;
+    margin-block-end: 10px;
   }
 
   .section__gallery-pictures {
