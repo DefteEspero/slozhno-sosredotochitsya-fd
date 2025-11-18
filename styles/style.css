@@ -27,9 +27,6 @@
   color: var(--title-name-color);
   text-transform: lowercase;
   border: none;
-}
-
-.header__theme-menu-button {
   align-items: center;
   text-align: center;
   border: solid 1px transparent;
